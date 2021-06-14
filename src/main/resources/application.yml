@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bd_canvia?useSSL=false
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        hbm2ddl.auto: update
