@@ -1,6 +1,7 @@
 package com.proyecto.demo.Entity;
 
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -51,12 +52,17 @@ public class tb_cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @ApiModelProperty(notes = "Cliente id")
     private int id_tb_cliente;
 
+    @ApiModelProperty(notes = "Nombre del cliente")
     private  String nombre;
 
+    @ApiModelProperty(notes = "Apellido del cliente")
     private String apellido;
 
+
+    @ApiModelProperty(notes = "Correo del cliente")
     private String correo;
 
 
