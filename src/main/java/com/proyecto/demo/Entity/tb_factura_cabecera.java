@@ -26,7 +26,7 @@ public class tb_factura_cabecera {
 
 
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "order")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "detalle")
     private List<tb_item_detalle> detalle;
 
 
